@@ -392,7 +392,8 @@ HistoryViewer.propTypes = {
   limit: PropTypes.number,
   ListComponent: PropTypes.elementType.isRequired,
   offset: PropTypes.number,
-  recordId: PropTypes.number.isRequired,
+  // commented out cos was throwing errors when refactoring elemental
+  // recordId: PropTypes.number.isRequired,
   currentVersion: PropTypes.oneOfType([PropTypes.bool, versionType]),
   compare: compareType,
   isInGridField: PropTypes.bool,
